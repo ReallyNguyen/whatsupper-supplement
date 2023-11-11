@@ -16,6 +16,7 @@ export default function Home() {
       </Head>
       <main className={`${styles.main}`}>
         <NavBar/>
+        <h1>Test</h1>
       </main>
     </>
   )

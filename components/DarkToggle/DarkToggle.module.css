@@ -1,0 +1,55 @@
+.toggleContainer {
+    display: flex;
+    align-items: center;
+}
+
+.togglebtn {
+    width: 74px;
+    height: 35px;
+    border: none;
+    background-color: var(--offBlack);
+    color: var(--offWhite);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px; 
+    border-radius: 15px;
+    overflow: hidden; 
+    transition: background-color 0.2s ease; 
+}
+
+.dark {
+    background-color: var(--offWhite);
+}
+
+.light {
+    background-color: var(--offWhite);
+}
+
+.icon {
+    transition: transform 0.3s ease-in-out
+}
+
+.dark .icon {
+    transform: translateX(0);
+}
+
+.light .icon {
+    transform: translateX(200%);
+}
+
+.modeIndicator {
+    width: 10px; /* Adjust the size of the indicator */
+    height: 10px;
+    border-radius: 50%;
+    margin-left: 8px; /* Adjust the spacing between the icon and the indicator */
+}
+
+.darkIndicator {
+    background-color: #000; /* Dark mode indicator color */
+}
+
+.lightIndicator {
+    background-color: #fff; /* Light mode indicator color */
+}

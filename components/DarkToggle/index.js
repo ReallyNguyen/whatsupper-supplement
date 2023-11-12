@@ -11,11 +11,13 @@ const DarkToggle = ({ children }) => {
 
     return (
         <div className={styles.toggleContainer}>
-            <button className={`${styles.togglebtn} ${theme === "dark" ? styles.dark : styles.light}`} onClick={theme === "dark" ? switchLight : switchDark}>
+            <button
+                className={`${styles.togglebtn} ${theme === 'light' ? styles.dark : styles.light}`}
+                onClick={theme === 'light' ? switchDark : switchLight}
+            >
                 <span className={styles.icon}>
-                    <Image src={theme === "dark" ? MoonSVG : SunSVG} alt={theme === "dark" ? "Moon" : "Sun"} />
+                    <Image src={theme === 'dark' ? SunSVG : MoonSVG} alt={theme === 'light' ? 'Sun' : 'Moon'} />
                 </span>
-                <span className={`${styles.modeIndicator} ${theme === "dark" ? styles.darkIndicator : styles.lightIndicator}`} />
             </button>
             {children}
         </div>

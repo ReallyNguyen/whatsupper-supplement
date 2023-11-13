@@ -1,8 +1,16 @@
+
 import Head from 'next/head'
 import styles from '@/styles/Home.module.css'
 import Image from 'next/image'
 import Link from 'next/link'
 import NavBar from '@/components/NavBar/NavBar'
+
+
+import Head from 'next/head';
+import Image from 'next/image';
+import styles from '@/styles/Home.module.css';
+import { ThemeProvider } from '@/context/ThemeContext';
+import DarkToggle from '@/components/DarkToggle';
 
 
 export default function Home() {
@@ -14,10 +22,18 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+
       <main className={`${styles.main}`}>
         <NavBar/>
         <h1>Test</h1>
       </main>
+
+      <ThemeProvider>
+        <main className={`${styles.main}`}>
+          <DarkToggle />
+        </main>
+      </ThemeProvider>
+
     </>
-  )
+  );
 }

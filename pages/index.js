@@ -1,17 +1,10 @@
-
-import Head from 'next/head'
-import styles from '@/styles/Home.module.css'
-import Image from 'next/image'
-import Link from 'next/link'
-import NavBar from '@/components/NavBar/NavBar'
-
-
 import Head from 'next/head';
 import Image from 'next/image';
 import styles from '@/styles/Home.module.css';
 import { ThemeProvider } from '@/context/ThemeContext';
 import DarkToggle from '@/components/DarkToggle';
 import ChatBot from '@/components/ChatBot';
+import NavBar from '@/components/NavBar/NavBar'
 
 
 export default function Home() {
@@ -25,7 +18,7 @@ export default function Home() {
       </Head>
 
       <main className={`${styles.main}`}>
-        <NavBar/>
+        <NavBar />
         <h1>Test</h1>
       </main>
 

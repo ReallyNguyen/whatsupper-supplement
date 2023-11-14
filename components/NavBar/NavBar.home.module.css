@@ -30,6 +30,7 @@
 
 .link1{
     padding-left: 250px;
+    padding-right: 40px;
     flex-direction: none;
     text-decoration: none;
     /* color: black; */
@@ -37,7 +38,7 @@
 }
 
 .link2{
-    margin-left: 5rem;
+    margin-left: 8rem;
     flex-direction: none;
     text-decoration: none;
     /* color: black; */
@@ -46,7 +47,8 @@
 
 .link3{
     text-decoration: none;
-    margin-left: 10rem;
+    margin-left: 2rem;
+    padding-left: -20px;
     /* color: black; */
     color: white;
     /* pls adjust for toggle  */

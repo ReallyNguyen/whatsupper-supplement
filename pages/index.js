@@ -8,6 +8,7 @@ import NavBar from '@/components/NavBar/NavBar'
 import Testimonials from '@/components/Testimonials';
 import testimonialsData from '@/data/testimonials';
 import testimonialsStyles from '@/components/Testimonials/Testimonials.module.css';
+import ContactForm from '@/components/Contact';
 import Main from "@/components/Animation/Home";
 import Refresh from "@/components/Animation/GeneratorRefresh";
 import Info from "@/components/Animation/RecipeInfo";
@@ -45,6 +46,7 @@ export default function Home() {
               </div>
             ))}
           </div>
+          <ContactForm />
         </main>
       </ThemeProvider>
 

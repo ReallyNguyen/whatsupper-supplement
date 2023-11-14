@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600&family=Nunito&display=swap');
+
+.contact-card {
+    width: 800px;
+    border: 1px solid #f1efef;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    background-color: #f1efef;
+  }
+  
+  .card-header {
+    background-color: #f1efef;
+    color: #f1efef;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .card-body {
+    padding-top: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 40px;
+    background-color: #f1efef;
+    
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* label {
+    margin-bottom: 8px;
+  } */
+  
+  .textarea {
+    margin-bottom: 16px;
+    padding: 8px;
+    padding-left: 10px;
+    border: 1px solid #f1efef;
+    border-radius: 5px;
+    background-color: white;
+    height: 6rem;
+  }
+
+.message-label {
+  font-size: 16px; 
+  font-weight: bold; 
+}
+
+.message-input {
+  width: 98%; 
+  height: 150px; 
+  resize: vertical; 
+  padding: 8px;
+  border: 1px solid #f1efef;
+  border-radius: 11.68px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+  .button {
+    padding: 18px;
+    width: 500px;
+    background-color: #629560;
+    color: #fff;
+    border: none;
+    border-radius: 11.68px;
+    cursor: pointer;
+    margin: 0 auto; 
+    display: block; 
+    font-size: medium;
+    font-family: 'Manrope', sans-serif;
+  }
+  
+  
+  .button:hover {
+    background-color: #45a049;
+  }
+  
+  .form-row {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .form-group {
+    flex: 1;
+  }
+
+.nameInput {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 22rem;
+  height: 3rem;
+  border-radius: 8px;
+  background-color: white;
+  border-color: #f1efef;
+}
+
+.emailInput {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 22rem;
+  height: 3rem;
+  border-radius: 8px;
+  background-color: white;
+  border-color: #f1efef;
+  margin-bottom: 30px;
+}
+
+.nameCombined {
+  flex-direction: column;
+  display: flex;
+}
+
+.emailCombined {
+  flex-direction: column;
+  display: flex;
+  margin-left: 1rem;
+}
+
+.nameEmail {
+  flex-direction: row;
+  display: flex;
+}

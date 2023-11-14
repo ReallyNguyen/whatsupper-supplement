@@ -32,7 +32,7 @@ export default function Home() {
         </main>
       </ThemeProvider>
 
-      <main className={`${styles.main}`}>
+      <main>
         <DownloadButton/>
         <MessageButton/>
         <SeeMoreButton/>

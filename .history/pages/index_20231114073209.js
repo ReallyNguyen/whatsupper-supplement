@@ -5,9 +5,6 @@ import { ThemeProvider } from '@/context/ThemeContext';
 import DarkToggle from '@/components/DarkToggle';
 import ChatBot from '@/components/ChatBot';
 import NavBar from '@/components/NavBar/NavBar'
-import DownloadButton from '@/components/Buttons/downLoadButton';
-import MessageButton from '@/components/Buttons/messageButton';
-import SeeMoreButton from '@/components/Buttons/seeMoreButton';
 
 
 export default function Home() {
@@ -31,12 +28,6 @@ export default function Home() {
           <ChatBot />
         </main>
       </ThemeProvider>
-
-      <main className={`${styles.main}`}>
-        <DownloadButton/>
-        <MessageButton/>
-        <SeeMoreButton/>
-      </main>
 
     </>
   );

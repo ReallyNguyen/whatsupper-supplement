@@ -23,6 +23,10 @@ export default function Home() {
       <main className={`${styles.main}`}>
         <NavBar />
         <h1>Test</h1>
+        <DownloadButton/>
+        <MessageButton/>
+        <SeeMoreButton/>
+
       </main>
 
       <ThemeProvider>
@@ -31,12 +35,6 @@ export default function Home() {
           <ChatBot />
         </main>
       </ThemeProvider>
-
-      <main className={`${styles.main}`}>
-        <DownloadButton/>
-        <MessageButton/>
-        <SeeMoreButton/>
-      </main>
 
     </>
   );

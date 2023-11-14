@@ -6,6 +6,9 @@ import DarkToggle from '@/components/DarkToggle';
 import ChatBot from '@/components/ChatBot';
 import NavBar from '@/components/NavBar/NavBar'
 import ContactForm from '@/components/Contact';
+import Main from "@/components/Animation/Home";
+import Refresh from "@/components/Animation/GeneratorRefresh";
+import Info from "@/components/Animation/RecipeInfo";
 
 
 export default function Home() {

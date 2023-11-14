@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+// import '@fontsource/manrope';
 import styles from './button.module.css'
 
 export default function MessageButton() {
@@ -19,7 +20,7 @@ export default function MessageButton() {
   return (
     <>
       <button
-        className={`${styles.message} ${buttonClicked ? styles.messageClicked : ''}`}
+        className={`${styles.message} ${buttonClicked ? styles.buttonClicked : ''}`}
         onClick={handleButtonClick}
         onMouseClick={() => setButtonColor('#96AF65')} // Change color on hover
         onMouseLeave={() => setButtonColor('#629560')} // Revert color when not hovered

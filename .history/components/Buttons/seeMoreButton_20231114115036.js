@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import styles from './button.module.css'
+import '@fontsource/manrope';
 
 export default function SeeMoreButton() {
   // Initialize state with a default color and text
@@ -18,8 +18,26 @@ export default function SeeMoreButton() {
 
   return (
     <>
-      <button className={`${styles.seeMore} ${buttonClicked ? styles.seeMoreClicked : ''}`}
-        
+      <button
+        style={{
+          backgroundColor: buttonClicked ? '#96AF65' : buttonColor,
+          width: '255px',
+          height: '67px',
+          flexShrink: '0',
+          borderRadius: '0.9375rem',
+          borderWidth: '0',
+          outline: 'none',
+
+          color: 'var(--off-white, #F1EFEF)',
+          fontFamily: 'Manrope',
+          fontSize: '1.25rem',
+          fontStyle: 'normal',
+          fontWeight: 600,
+          lineHeight: 'normal',
+          lineSpacing: '-0.03rem',
+          transition: 'background-color 0.3s',
+
+        }}
         onClick={handleButtonClick}
         onMouseEnter={() => setButtonColor('#96AF65')} // Change color on hover
         onMouseLeave={() => setButtonColor('#629560')} // Revert color when not hovered
@@ -45,5 +63,5 @@ export default function SeeMoreButton() {
 //           fontWeight: 600,
 //           lineHeight: 'normal',
 //           lineSpacing: '-0.03rem',
-//           transition: 'background-color 0.3s',
+          transition: 'background-color 0.3s',
 

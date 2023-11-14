@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import '@fontsource/manrope';
 import styles from './button.module.css'
 
 export default function MessageButton() {
@@ -19,9 +20,26 @@ export default function MessageButton() {
   return (
     <>
       <button
-        className={`${styles.message} ${buttonClicked ? styles.messageClicked : ''}`}
+        style={{
+          backgroundColor: buttonClicked ? '#96AF65' : buttonColor, // Change color permanently if clicked
+          width: '490px',
+          height: '52.192px',
+          flexShrink: '0',
+          borderRadius: '0.73031rem',
+          borderWidth: '0',
+          outline: 'none',
+
+          color: 'var(--off-white, #F1EFEF)',
+          fontFamily: 'Manrope',
+          fontSize: '1.25rem',
+          fontStyle: 'normal',
+          fontWeight: 700,
+          lineHeight: 'normal',
+          transition: 'background-color 0.3s', // Add a smooth transition effect
+          
+        }}
         onClick={handleButtonClick}
-        onMouseClick={() => setButtonColor('#96AF65')} // Change color on hover
+        onMouseEnter={() => setButtonColor('#96AF65')} // Change color on hover
         onMouseLeave={() => setButtonColor('#629560')} // Revert color when not hovered
       >
         {buttonText}
@@ -31,19 +49,5 @@ export default function MessageButton() {
 }
 
 
-// backgroundColor: buttonClicked ? '#96AF65' : buttonColor, // Change color permanently if clicked
-// width: '490px',
-// height: '52.192px',
-// flexShrink: '0',
-// borderRadius: '0.73031rem',
-// borderWidth: '0',
-// outline: 'none',
 
-// color: 'var(--off-white, #F1EFEF)',
-// fontFamily: 'Manrope',
-// fontSize: '1.25rem',
-// fontStyle: 'normal',
-// fontWeight: 700,
-// lineHeight: 'normal',
-// transition: 'background-color 0.3s', // Add a smooth transition effect
 

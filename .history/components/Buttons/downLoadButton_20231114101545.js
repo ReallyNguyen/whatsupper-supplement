@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
+import '@fontsource/manrope';
 import styles from './button.module.css'
-
-
 
 export default function DownloadButton() {
   // Initialize state with a default color and text
@@ -20,10 +19,8 @@ export default function DownloadButton() {
 
   return (
     <>
-      <button className={`${styles.download} ${buttonClicked ? styles.downloadClicked : ''}`}
-      onClick={handleButtonClick}
-      onMouseEnter={() => setButtonColor('#96AF65')} // Change color on hover
-      onMouseLeave={() => setButtonColor('#629560')} // Revert color when not hovered
+      <button className='{`${styles.main}`'
+        
       >
         {buttonText}
       </button>

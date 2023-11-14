@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import styles from './button.module.css'
+import '@fontsource/manrope';
 
 export default function SeeMoreButton() {
   // Initialize state with a default color and text
@@ -45,5 +45,5 @@ export default function SeeMoreButton() {
 //           fontWeight: 600,
 //           lineHeight: 'normal',
 //           lineSpacing: '-0.03rem',
-//           transition: 'background-color 0.3s',
+          // transition: 'background-color 0.3s',
 

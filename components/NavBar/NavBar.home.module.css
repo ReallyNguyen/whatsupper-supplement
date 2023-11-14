@@ -1,38 +1,57 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap');
 
 
 .navbarItems{
     display: flex;
     flex-direction: row;
-    padding-left: 3%;
+    margin-top: -70px;
 }
 .whatsupperLogo{
-    padding: 2.5%;
+    margin-left: -5px; 
 }
 
 .navbarLinks{
     display: inline-block;
-    padding-top: 3rem;
+    padding-top: 1.7rem;
     font-family: 'Manrope', sans-serif;
-    font-weight: bold;
-    
+    font-weight: 400;
+    /* color: #333;
+    transition: color 0.3s ease;  */
 } 
 
+/* .navbarLinks:hover{
+    color: #0070f3; 
+}
+
+.navbarLinks:active{
+    color: #ff4500; 
+} */
+
+
 .link1{
-    padding-left: 18rem;
+    padding-left: 250px;
     flex-direction: none;
     text-decoration: none;
-    color: black;
+    /* color: black; */
+    color: white; 
 }
 
 .link2{
-    margin: 8rem;
+    margin-left: 5rem;
     flex-direction: none;
     text-decoration: none;
-    color: black;
+    /* color: black; */
+    color: white;
 }
 
 .link3{
     text-decoration: none;
-    color: black;
+    margin-left: 10rem;
+    /* color: black; */
+    color: white;
+    /* pls adjust for toggle  */
+}
+
+.clicked{
+    font-weight: 700;
 }

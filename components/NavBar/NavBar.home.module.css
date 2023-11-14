@@ -4,7 +4,7 @@
 .navbarItems{
     display: flex;
     flex-direction: row;
-    margin-top: -70px;
+    margin-top: -50px;
 }
 .whatsupperLogo{
     margin-left: -5px; 
@@ -15,6 +15,7 @@
     padding-top: 1.7rem;
     font-family: 'Manrope', sans-serif;
     font-weight: 400;
+    margin-left: 450px ;
     /* color: #333;
     transition: color 0.3s ease;  */
 } 
@@ -29,8 +30,7 @@
 
 
 .link1{
-    padding-left: 250px;
-    padding-right: 40px;
+    padding-left: 69px;
     flex-direction: none;
     text-decoration: none;
     /* color: black; */
@@ -38,7 +38,7 @@
 }
 
 .link2{
-    margin-left: 8rem;
+    margin-left: 4.5rem;
     flex-direction: none;
     text-decoration: none;
     /* color: black; */
@@ -47,8 +47,6 @@
 
 .link3{
     text-decoration: none;
-    margin-left: 2rem;
-    padding-left: -20px;
     /* color: black; */
     color: white;
     /* pls adjust for toggle  */

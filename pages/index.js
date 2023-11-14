@@ -5,6 +5,9 @@ import { ThemeProvider } from '@/context/ThemeContext';
 import DarkToggle from '@/components/DarkToggle';
 import ChatBot from '@/components/ChatBot';
 import NavBar from '@/components/NavBar/NavBar'
+import Main from "@/components/Home";
+import Refresh from "@/components/GeneratorRefresh";
+import Info from "@/components/RecipeInfo";
 
 
 export default function Home() {

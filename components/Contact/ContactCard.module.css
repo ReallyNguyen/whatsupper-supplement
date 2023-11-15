@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600&family=Nunito&display=swap');
 
-.contact-card {
+.contactCard {
     width: 800px;
     border: 1px solid #f1efef;
     border-radius: 8px;
@@ -9,14 +9,14 @@
     background-color: #f1efef;
   }
   
-  .card-header {
+  .cardHeader {
     background-color: #f1efef;
     color: #f1efef;
     padding: 10px;
     text-align: center;
   }
   
-  .card-body {
+  .cardBody {
     padding-top: 5px;
     padding-left: 20px;
     padding-right: 20px;
@@ -30,18 +30,18 @@
     flex-direction: column;
   }
   
-  /* label {
+  .label {
     margin-bottom: 8px;
-  } */
+  }
   
   .textarea {
     margin-bottom: 16px;
     padding: 8px;
     padding-left: 10px;
     border: 1px solid #f1efef;
-    border-radius: 5px;
+    border-radius: 11.68px;
     background-color: white;
-    height: 6rem;
+    height: 10rem;
   }
 
 .message-label {
@@ -49,17 +49,7 @@
   font-weight: bold; 
 }
 
-.message-input {
-  width: 98%; 
-  height: 150px; 
-  resize: vertical; 
-  padding: 8px;
-  border: 1px solid #f1efef;
-  border-radius: 11.68px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-  .button {
+  .submit { 
     padding: 18px;
     width: 500px;
     background-color: #629560;
@@ -72,10 +62,8 @@
     font-size: medium;
     font-family: 'Manrope', sans-serif;
   }
-  
-  
-  .button:hover {
-    background-color: #45a049;
+  .submit:hover {
+    background-color: #67a965;
   }
   
   .form-row {
@@ -88,33 +76,33 @@
   }
 
 .nameInput {
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  width: 22rem;
+  width: 23rem;
   height: 3rem;
   border-radius: 8px;
   background-color: white;
-  border-color: #f1efef;
+  border: 0;
 }
 
 .emailInput {
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  width: 22rem;
+  width: 23rem;
   height: 3rem;
   border-radius: 8px;
   background-color: white;
-  border-color: #f1efef;
+  border: 0;
   margin-bottom: 30px;
 }
 
 .nameCombined {
   flex-direction: column;
   display: flex;
+  border-color: white;
 }
 
 .emailCombined {
   flex-direction: column;
   display: flex;
   margin-left: 1rem;
+  border-color: white;
 }
 
 .nameEmail {

@@ -20,7 +20,7 @@ export default function DownloadButton() {
 
   return (
     <>
-      <button className={`${styles.download} ${buttonClicked ? styles.downloadClicked : ''}`}
+      <button className={`${styles.download} ${downloadClicked ? styles.downloadClicked : ''}`}
       onClick={handleButtonClick}
       onMouseEnter={() => setButtonColor('#96AF65')} // Change color on hover
       onMouseLeave={() => setButtonColor('#629560')} // Revert color when not hovered

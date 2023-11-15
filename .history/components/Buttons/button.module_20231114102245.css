@@ -1,0 +1,35 @@
+.download {
+    background-color: var(--button-color);
+    width: 15.9375rem;
+    height: 4.1875rem;
+    flex-shrink: 0;
+    border-radius: 0.9375rem;
+    border-width: 0;
+    outline: none;
+
+    color: var(--off-white, #F1EFEF);
+    font-family: var(--font-family);
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.03rem;
+    transition: background-color 0.3s;
+}
+
+.message {
+    width: 15.9375rem;
+    height: 4.1875rem;
+    flex-shrink: 0;
+    border-radius: 0.9375rem;
+    border-width: 0;
+    outline: none;
+  
+    color: var(--off-white, #F1EFEF);
+    font-family: var(--font-family);
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    transition: background-color 0.3s;
+}

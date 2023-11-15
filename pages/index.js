@@ -16,9 +16,9 @@ import testimonialsData from '@/data/testimonials';
 import testimonialsStyles from '@/components/Testimonials/Testimonials.module.css';
 import ContactForm from '@/components/Contact';
 import React, { StrictMode } from "react";
-import Main from "@/components/Animation/Home";
-import Refresh from "@/components/Animation/GeneratorRefresh";
-import Info from "@/components/Animation/RecipeInfo";
+// import Main from "@/components/Animation/Home";
+// import Refresh from "@/components/Animation/GeneratorRefresh";
+// import Info from "@/components/Animation/RecipeInfo";
 
 
 export default function Home() {
@@ -64,9 +64,9 @@ export default function Home() {
       </ThemeProvider>
 
       <main className={`${styles.main}`}>
-        <DownloadButton/>
-        <MessageButton/>
-        <SeeMoreButton/>
+        <DownloadButton />
+        <MessageButton />
+        <SeeMoreButton />
       </main>
 
     </>

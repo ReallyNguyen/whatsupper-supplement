@@ -1,0 +1,22 @@
+.message {
+  background-color: #629560;
+  width: 490px;
+  height: 52.192px;
+  flex-shrink: 0;
+  border-radius: 0.73031rem;
+  border-width: 0;
+  outline: none;
+  color: var(--off-white, #F1EFEF);
+  font-family: 'Manrope';
+  /* font-family: var(--font-family); */
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  transition: background-color 0.3s;
+}
+
+.message:hover {
+  background-color: #96AF65;
+}
+

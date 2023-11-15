@@ -1,0 +1,78 @@
+.download {
+  background-color: #629560;
+  width: 15.9375rem;
+  height: 4.1875rem;
+  flex-shrink: 0;
+  border-radius: 0.9375rem;
+  border-width: 0;
+  outline: none;
+  color: var(--off-white, #F1EFEF);
+  font-family: 'Manrope';
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  transition: background-color 0.3s;
+}
+
+.download:hover{
+  background-color: #96AF65;
+}
+
+.downloadClicked{
+  background-color: #96AF65;
+}
+
+
+
+.message {
+  background-color: #629560;
+  width: 490px;
+  height: 52.192px;
+  flex-shrink: 0;
+  border-radius: 0.73031rem;
+  border-width: 0;
+  outline: none;
+  color: var(--off-white, #F1EFEF);
+  font-family: var(--font-family);
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  transition: background-color 0.3s;
+}
+
+.message:hover {
+  background-color: #96AF65;
+}
+
+.messageClicked {
+  background-color: #96AF65;
+}
+
+.seeMore {
+  background-color: #629560;
+  width: 255px;
+  height: 67px;
+  flex-shrink: 0;
+  border-radius: 0.9375rem;
+  border-width: 0;
+  outline: none;
+  color: var(--off-white, #F1EFEF);
+  font-family: 'Manrope';
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  /* line-spacing: -0.03rem; */
+  line-height: 1.5;
+  transition: background-color 0.3s;
+}
+
+.seeMore:Hover {
+  background-color: #96AF65;
+}
+
+.seeMoreClicked {
+  background-color: #96AF65;
+}

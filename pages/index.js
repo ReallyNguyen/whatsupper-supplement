@@ -10,7 +10,6 @@ import DownloadButton from '@/components/Buttons/downLoadButton';
 import MessageButton from '@/components/Buttons/messageButton';
 import SeeMoreButton from '@/components/Buttons/seeMoreButton';
 
-
 import Testimonials from '@/components/Testimonials';
 import testimonialsData from '@/data/testimonials';
 import testimonialsStyles from '@/components/Testimonials/Testimonials.module.css';
@@ -33,42 +32,27 @@ export default function Home() {
 
       <main className={`${styles.main}`}>
         <NavBar />
-        <h1>Test</h1>
+        <ChatBot />
+        {/* <StrictMode>
+          <Main />
+          <Refresh />
+          <Info />
+        </StrictMode> */}
+        <div className={`${styles.gridContainer}`}>
+          {testimonialsData.map((testimonial, index) => (
+            <div key={index} className={`${styles.gridColumn}`}>
+              <Testimonials
+                imageUrl={testimonial.imageUrl}
+                title={testimonial.title}
+                username={testimonial.username}
+                description={testimonial.description}
+                className={testimonialsStyles[`card${index + 1}`]}
+              />
+            </div>
+          ))}
+        </div>
+        <ContactForm />
       </main>
-
-      <ThemeProvider>
-        <main className={`${styles.main}`}>
-          <DarkToggle />
-          <ChatBot />
-          {/* <ContactForm /> */}
-          {/* <StrictMode>
-            <Main />
-            <Refresh />
-            <Info />
-          </StrictMode> */}
-          <div className={`${styles.gridContainer}`}>
-            {testimonialsData.map((testimonial, index) => (
-              <div key={index} className={`${styles.gridColumn}`}>
-                <Testimonials
-                  imageUrl={testimonial.imageUrl}
-                  title={testimonial.title}
-                  username={testimonial.username}
-                  description={testimonial.description}
-                  className={testimonialsStyles[`card${index + 1}`]}
-                />
-              </div>
-            ))}
-          </div>
-          <ContactForm />
-        </main>
-      </ThemeProvider>
-
-      <main className={`${styles.main}`}>
-        <DownloadButton />
-        <MessageButton />
-        <SeeMoreButton />
-      </main>
-
     </>
   );
 }

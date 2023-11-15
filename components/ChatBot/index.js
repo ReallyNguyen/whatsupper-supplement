@@ -150,7 +150,7 @@ export default function Chat() {
                 key={index}
                 onClick={() => handleQuestionClick(qa.question, qa.answer)}
                 className={`question user`}
-                style={{ fontSize: '10px', textAlign: 'center', width: '50%' }}
+                style={{ fontSize: '15px', textAlign: 'center', width: '50%' }}
               >
                 {qa.question}
               </div>
@@ -165,7 +165,7 @@ export default function Chat() {
           flex-direction: column;
           align-items: flex-end;
           position: fixed;
-          bottom: 10px;
+          bottom: 40px;
           right: 10px;
           transition: all 0.3s ease;
         }
@@ -183,8 +183,8 @@ export default function Chat() {
         }
 
         .chat-container {
-          width: 250px;
-          height: 200px; /* Set a fixed height for the chat container */
+          width: 350px;
+          height: 300px; /* Set a fixed height for the chat container */
           border-radius: 10px;
           background-color: #F1EFEF;
           position: fixed; /* Set the position to fixed */
@@ -207,7 +207,7 @@ export default function Chat() {
 
         .banner-text {
           flex-grow: 1;
-          font-size: 12px;
+          font-size: 15px;
           text-align: left;
           padding-top: 3px;
         }
@@ -229,7 +229,7 @@ export default function Chat() {
         }
 
         .chat-content {
-          padding: 10px;
+          padding: 15px;
           overflow-y: scroll; /* Ensure this property is set */
         }
 
@@ -242,13 +242,13 @@ export default function Chat() {
         .bot {
           text-align: left;
           color: #221F1F;
-          font-size: 10px;
+          font-size: 15px;
         }
 
         .user {
           text-align: right;
           color: #221F1F;
-          font-size: 10px;
+          font-size: 15px;
         }
 
         .avatar {
@@ -280,7 +280,7 @@ export default function Chat() {
           padding: 5px;
           border: 1px solid #ccc;
           margin-bottom: 5px;
-          font-size: 10px;
+          font-size: 15px;
           text-align: right;
           box-sizing: border-box;
           display: flex;
@@ -298,8 +298,8 @@ export default function Chat() {
           position: fixed;
           bottom: 20px; // Adjust the distance from the bottom as needed
           right: 20px; // Adjust the distance from the right as needed
-          width: 30px;
-          height: 30px;
+          width: 50px;
+          height: 50px;
         }
       `}</style>
     </>

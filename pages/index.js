@@ -5,6 +5,9 @@ import { ThemeProvider } from '@/context/ThemeContext';
 import DarkToggle from '@/components/DarkToggle';
 import ChatBot from '@/components/ChatBot';
 import NavBar from '@/components/NavBar/NavBar'
+import Testimonials from '@/components/Testimonials';
+import testimonialsData from '@/data/testimonials';
+import testimonialsStyles from '@/components/Testimonials/Testimonials.module.css';
 import ContactForm from '@/components/Contact';
 import React, { StrictMode } from "react";
 import Main from "@/components/Animation/Home";
@@ -36,6 +39,20 @@ export default function Home() {
             <Refresh />
             <Info />
           </StrictMode> */}
+          <div className={`${styles.gridContainer}`}>
+            {testimonialsData.map((testimonial, index) => (
+              <div key={index} className={`${styles.gridColumn}`}>
+                <Testimonials
+                  imageUrl={testimonial.imageUrl}
+                  title={testimonial.title}
+                  username={testimonial.username}
+                  description={testimonial.description}
+                  className={testimonialsStyles[`card${index + 1}`]}
+                />
+              </div>
+            ))}
+          </div>
+          <ContactForm />
         </main>
       </ThemeProvider>
 

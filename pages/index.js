@@ -3,10 +3,14 @@ import Image from 'next/image';
 import styles from '@/styles/Home.module.css';
 import ChatBot from '@/components/ChatBot';
 import NavBar from '@/components/NavBar/NavBar'
+import HorizontalCarousel from '@/components/HorizontalCarousel'
+
 
 import DownloadButton from '@/components/Buttons/downLoadButton';
 import MessageButton from '@/components/Buttons/messageButton';
 import SeeMoreButton from '@/components/Buttons/seeMoreButton';
+import testimonialsData from '@/data/testimonials';
+import horizontalStyles from '@/components/HorizontalCarousel/HorizontalCarousel.module.css';
 
 export default function Home() {
   return (
@@ -32,6 +36,20 @@ export default function Home() {
         </div>
         <div className={`${styles.carouselContainer}`}>
           <p className={`${styles.carouselHeader}`}>See What Others Are Creating</p>
+        </div>
+        <div className={`${styles.horizontalContainer}`}>
+          {testimonialsData.map((testimonial, index) => (
+            <div key={index}>
+              <HorizontalCarousel
+                imageUrl={testimonial.imageUrl}
+                title={testimonial.title}
+                username={testimonial.username}
+                description={testimonial.description}
+                className={horizontalStyles[`card${index + 1}`]}
+              /> 
+
+            </div>
+          ))}
         </div>
         <ChatBot />
       </main>

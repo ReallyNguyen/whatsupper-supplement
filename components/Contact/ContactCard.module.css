@@ -125,7 +125,7 @@
 
 .submit {
   padding: 18px;
-  width: 500px;
+  width: 20rem;
   background-color: #629560;
   color: #fff;
   border: none;
@@ -135,6 +135,7 @@
   display: block;
   font-size: medium;
   font-family: 'Manrope', sans-serif;
+  margin-top: 1.5rem;
 }
 
 .submit:hover {

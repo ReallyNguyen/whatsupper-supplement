@@ -16,8 +16,8 @@
 
 .header {
   color: var(--off-black);
-  font-family: Manrope;
-  font-size: 2.5rem;
+  font-family: 'Manrope';
+  font-size: 2rem;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
@@ -26,8 +26,8 @@
 .subheader {
   margin-top: -1rem;
   color: var(--asparagus, #629560);
-  font-family: Manrope;
-  font-size: 1.5rem;
+  font-family: 'Manrope';
+  font-size: 1rem;
   font-style: normal;
   font-weight: 'semibold';
   line-height: normal;

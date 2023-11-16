@@ -27,11 +27,11 @@ export default function Home() {
 
       <main className={`${styles.main}`}>
         <NavBar />
-        <StrictMode>
+        {/* <StrictMode>
           <Main />
           <Refresh />
           <Info />
-        </StrictMode>
+        </StrictMode> */}
         <div className={`${styles.titleImg}`}>
           <div className={`${styles.cta}`}>
             <p className={`${styles.header}`}>Empowering People, <br />One Meal at a Time 🍽️</p>

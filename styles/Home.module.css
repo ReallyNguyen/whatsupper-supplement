@@ -14,3 +14,14 @@
    grid-template-columns: repeat(3, 1fr);
    gap: 20px;
  }
+
+ .horizontalContainer {
+   padding-bottom: 10rem;
+   padding-top: 10rem;
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+   gap: 20px;
+   overflow-x: auto;
+   /* Remove white-space: nowrap; */
+ }

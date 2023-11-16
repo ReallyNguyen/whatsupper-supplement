@@ -4,14 +4,16 @@ import testimonialsData from '@/data/testimonials';
 import testimonialsStyles from '@/components/Testimonials/Testimonials.module.css';
 import styles from '@/styles/Product.module.css';
 import React, { StrictMode } from "react";
+import { ThemeProvider } from '../components/Contexts/ThemeContext.js';
+
 // import Main from "@/components/Animation/Home";
 // import Refresh from "@/components/Animation/GeneratorRefresh";
 // import Info from "@/components/Animation/RecipeInfo";
 
 export default function Product() {
     return (
-        <>
-            <div className={`${styles.main}`}>
+        <ThemeProvider>
+        <div className={`${styles.main}`}>
                 <NavBar />
                 <div className={`${styles.header}`}>
                     <p className={`${styles.mainHeader}`}>Your Personal Chef</p>
@@ -41,6 +43,7 @@ export default function Product() {
                     ))}
                 </div>
             </div>
-        </>
+        </ThemeProvider>
+
     )
 }

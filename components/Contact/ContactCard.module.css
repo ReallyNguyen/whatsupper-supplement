@@ -7,6 +7,7 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: 20px;
     background-color: #f1efef;
+    font-family: 'Manrope', sans-serif;
   }
   
   .cardHeader {
@@ -42,16 +43,15 @@
     border-radius: 11.68px;
     background-color: white;
     height: 10rem;
+    color: black;
+    font-family: 'Manrope', sans-serif;
+    font-size: 16px;
+    padding-left: 15px;
   }
-
-.message-label {
-  font-size: 16px; 
-  font-weight: bold; 
-}
 
   .submit { 
     padding: 18px;
-    width: 500px;
+    width: 350px;
     background-color: #629560;
     color: #fff;
     border: none;
@@ -61,6 +61,7 @@
     display: block; 
     font-size: medium;
     font-family: 'Manrope', sans-serif;
+    margin-top: 2rem;
   }
   .submit:hover {
     background-color: #67a965;
@@ -76,20 +77,30 @@
   }
 
 .nameInput {
-  width: 23rem;
+  width: 22rem;
   height: 3rem;
   border-radius: 8px;
   background-color: white;
   border: 0;
+  color: black;
+  font-family: 'Manrope', sans-serif;
+  font-size: 16px;
+  padding-left: 15px;
+  padding-right: 6px;
 }
 
+
 .emailInput {
-  width: 23rem;
+  width: 22rem;
   height: 3rem;
   border-radius: 8px;
   background-color: white;
   border: 0;
   margin-bottom: 30px;
+  color: black;
+  font-family: 'Manrope', sans-serif;
+  font-size: 16px;
+  padding-left: 15px;
 }
 
 .nameCombined {

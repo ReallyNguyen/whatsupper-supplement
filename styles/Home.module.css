@@ -7,45 +7,55 @@
    min-height: 100vh;
  }
 
- .header{
-  color: var(--off-black);
-  font-family: Manrope;
-  width: 100%;
-  font-size: 4rem;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-  letter-spacing: -0.0875rem;
+ .header {
+   color: var(--off-black);
+   font-family: Manrope;
+   width: 100%;
+   font-size: 2.5rem;
+   font-style: normal;
+   font-weight: 600;
+   line-height: normal;
+   letter-spacing: -0.0875rem;
  }
 
- .titleImg{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 15rem;
+ .titleImg {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   gap: 15rem;
  }
 
  .cta {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  margin-bottom: 5rem;
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   margin-bottom: 5rem;
  }
 
- .carouselContainer{
-  display: flex;
-  flex-direction: column;
-  width: 85%;
+ .carouselContainer {
+   display: flex;
+   flex-direction: column;
+   width: 85%;
  }
 
- .carouselHeader{
-  justify-content: left;
-  margin-top: 20rem;
-  color: var(--off-black);
-  font-family: Manrope;
-  font-size: 2rem;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
+ .carouselHeader {
+   justify-content: left;
+   margin-top: 5rem;
+   color: var(--off-black);
+   font-family: Manrope;
+   font-size: 1.5rem;
+   font-style: normal;
+   font-weight: 600;
+   line-height: normal;
+ }
+
+ .horizontalContainer {
+   padding-bottom: 5rem;
+   padding-top: 3rem;
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+   gap: 20px;
+   overflow-x: auto;
  }

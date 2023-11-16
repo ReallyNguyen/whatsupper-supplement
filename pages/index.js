@@ -1,18 +1,19 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import styles from '@/styles/Home.module.css';
-import { ThemeProvider } from '@/context/ThemeContext';
-import DarkToggle from '@/components/DarkToggle';
 import ChatBot from '@/components/ChatBot';
 import NavBar from '@/components/NavBar/NavBar'
-import Testimonials from '@/components/Testimonials';
-import testimonialsData from '@/data/testimonials';
-import testimonialsStyles from '@/components/Testimonials/Testimonials.module.css';
-import ContactForm from '@/components/Contact';
+import HorizontalCarousel from '@/components/HorizontalCarousel'
 import React, { StrictMode } from "react";
 import Main from "@/components/Animation/Home";
 import Refresh from "@/components/Animation/GeneratorRefresh";
 import Info from "@/components/Animation/RecipeInfo";
+
+import DownloadButton from '@/components/Buttons/downLoadButton';
+import MessageButton from '@/components/Buttons/messageButton';
+import SeeMoreButton from '@/components/Buttons/seeMoreButton';
+import testimonialsData from '@/data/testimonials';
+import horizontalStyles from '@/components/HorizontalCarousel/HorizontalCarousel.module.css';
 
 export default function Home() {
   return (
@@ -26,36 +27,41 @@ export default function Home() {
 
       <main className={`${styles.main}`}>
         <NavBar />
-        <h1>Test</h1>
-      </main>
-
-      <ThemeProvider>
-        <main className={`${styles.main}`}>
-          <DarkToggle />
-          <ChatBot />
-          {/* <ContactForm /> */}
-          {/* <StrictMode>
-            <Main />
-            <Refresh />
-            <Info />
-          </StrictMode> */}
-          <div className={`${styles.gridContainer}`}>
-            {testimonialsData.map((testimonial, index) => (
-              <div key={index} className={`${styles.gridColumn}`}>
-                <Testimonials
-                  imageUrl={testimonial.imageUrl}
-                  title={testimonial.title}
-                  username={testimonial.username}
-                  description={testimonial.description}
-                  className={testimonialsStyles[`card${index + 1}`]}
-                />
-              </div>
-            ))}
+        {/* <StrictMode>
+          <Main />
+          <Refresh />
+          <Info />
+        </StrictMode> */}
+        <div className={`${styles.titleImg}`}>
+          <div className={`${styles.cta}`}>
+            <p className={`${styles.header}`}>Empowering People, <br />One Meal at a Time 🍽️</p>
+            <DownloadButton />
           </div>
-          <ContactForm />
-        </main>
-      </ThemeProvider>
+          <Image
+            src="/homemockup.png"
+            width={325}
+            height={660} />
+        </div>
+        <div className={`${styles.carouselContainer}`}>
+          <p className={`${styles.carouselHeader}`}>See What Others Are Creating</p>
+          <div className={`${styles.horizontalContainer}`}>
+          {testimonialsData.map((testimonial, index) => (
+            <div key={index}>
+              <HorizontalCarousel
+                imageUrl={testimonial.imageUrl}
+                title={testimonial.title}
+                username={testimonial.username}
+                description={testimonial.description}
+                className={horizontalStyles[`card${index + 1}`]}
+              /> 
 
+            </div>
+          ))}
+        </div>
+        </div>
+       
+        <ChatBot />
+      </main>
     </>
   );
 }

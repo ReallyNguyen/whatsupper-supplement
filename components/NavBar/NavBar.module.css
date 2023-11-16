@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap');
+
+.navbarItems {
+    display: flex;
+    flex-direction: row;
+    column-gap: 40rem;
+    align-items: center;
+    padding-bottom: 2rem;
+}
+
+.navbarLinks {
+    padding-top: 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    column-gap: 3rem;
+    font-family: var(--font-family);
+    font-weight: 400;
+}
+
+.link1,
+.link2,
+.link3 {
+    text-decoration: none;
+}
+
+.clicked {
+    font-weight: 700;
+}

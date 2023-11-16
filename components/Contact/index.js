@@ -54,7 +54,7 @@ const ContactForm = () => {
                     </div>
 
                     <label htmlFor="message" className={styles.messageLabel}>Message</label>
-                    <div className={`${styles.textarea} ${styles.messageInput}`}
+                    <textarea className={`${styles.textarea} ${styles.messageInput}`}
 
                         id="message"
                         name="message"

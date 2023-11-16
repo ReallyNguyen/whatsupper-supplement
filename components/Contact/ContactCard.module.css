@@ -1,6 +1,82 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400&display=swap');
 
 .contactCard {
+
+    width: 800px;
+    border: 1px solid #f1efef;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    background-color: #f1efef;
+    font-family: 'Manrope', sans-serif;
+  }
+  
+  .cardHeader {
+    background-color: #f1efef;
+    color: #f1efef;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .cardBody {
+    padding-top: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 40px;
+    background-color: #f1efef;
+    
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .label {
+    margin-bottom: 8px;
+  }
+  
+  .textarea {
+    margin-bottom: 16px;
+    padding: 8px;
+    padding-left: 10px;
+    border: 1px solid #f1efef;
+    border-radius: 11.68px;
+    background-color: white;
+    height: 10rem;
+    color: black;
+    font-family: 'Manrope', sans-serif;
+    font-size: 16px;
+    padding-left: 15px;
+  }
+
+  .submit { 
+    padding: 18px;
+    width: 350px;
+    background-color: #629560;
+    color: #fff;
+    border: none;
+    border-radius: 11.68px;
+    cursor: pointer;
+    margin: 0 auto; 
+    display: block; 
+    font-size: medium;
+    font-family: 'Manrope', sans-serif;
+    margin-top: 2rem;
+  }
+  .submit:hover {
+    background-color: #67a965;
+  }
+  
+  .form-row {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .form-group {
+    flex: 1;
+  }
+
   width: 800px;
   border: 1px solid #f1efef;
   border-radius: 8px;
@@ -85,25 +161,36 @@
   color: black;
 }
 
+
 .nameInput {
-  width: 23rem;
+  width: 22rem;
   height: 3rem;
   border-radius: 8px;
   background-color: white;
   border: 0;
+  color: black;
+  font-family: 'Manrope', sans-serif;
+  font-size: 16px;
+  padding-left: 15px;
+  padding-right: 6px;
 }
 
 .email {
   color: black;
 }
 
+
 .emailInput {
-  width: 23rem;
+  width: 22rem;
   height: 3rem;
   border-radius: 8px;
   background-color: white;
   border: 0;
   margin-bottom: 30px;
+  color: black;
+  font-family: 'Manrope', sans-serif;
+  font-size: 16px;
+  padding-left: 15px;
 }
 
 .nameCombined {

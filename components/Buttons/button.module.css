@@ -1,25 +1,25 @@
 .download {
   background-color: #629560;
-  width: 15.9375rem;
-  height: 4.1875rem;
+  width: 12rem;
+  height: 3rem;
   flex-shrink: 0;
   border-radius: 0.9375rem;
   border-width: 0;
   outline: none;
   color: var(--off-white, #F1EFEF);
   font-family: 'Manrope';
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
   transition: background-color 0.3s;
 }
 
-.download:hover{
+.download:hover {
   background-color: #96AF65;
 }
 
-.downloadClicked{
+.downloadClicked {
   background-color: #96AF65;
 }
 

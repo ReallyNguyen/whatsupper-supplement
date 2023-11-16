@@ -30,13 +30,12 @@ export default function Home() {
           </div>
           <Image
             src="/homemockup.png"
-            width={370}
-            height={760} />
+            width={325}
+            height={660} />
         </div>
         <div className={`${styles.carouselContainer}`}>
           <p className={`${styles.carouselHeader}`}>See What Others Are Creating</p>
-        </div>
-        <div className={`${styles.horizontalContainer}`}>
+          <div className={`${styles.horizontalContainer}`}>
           {testimonialsData.map((testimonial, index) => (
             <div key={index}>
               <HorizontalCarousel
@@ -50,6 +49,8 @@ export default function Home() {
             </div>
           ))}
         </div>
+        </div>
+       
         <ChatBot />
       </main>
     </>

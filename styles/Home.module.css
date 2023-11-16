@@ -11,7 +11,7 @@
    color: var(--off-black);
    font-family: Manrope;
    width: 100%;
-   font-size: 4rem;
+   font-size: 2.5rem;
    font-style: normal;
    font-weight: 600;
    line-height: normal;
@@ -41,18 +41,18 @@
 
  .carouselHeader {
    justify-content: left;
-   margin-top: 20rem;
+   margin-top: 5rem;
    color: var(--off-black);
    font-family: Manrope;
-   font-size: 2rem;
+   font-size: 1.5rem;
    font-style: normal;
    font-weight: 600;
    line-height: normal;
  }
 
  .horizontalContainer {
-   padding-bottom: 10rem;
-   padding-top: 10rem;
+   padding-bottom: 5rem;
+   padding-top: 3rem;
    display: flex;
    justify-content: flex-start;
    align-items: center;

@@ -57,9 +57,11 @@
 /* dark + light mode section */
 
 body {
-  padding: 0;
   margin: 0;
+  padding: 0;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
+
 
 .light {
   background-color: white;
@@ -76,9 +78,15 @@ a {
   text-decoration: none;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light),
+(prefers-color-scheme: no-preference) {
   html {
-    color-scheme: dark;
+    color-scheme: light;
+  }
+
+  body {
+    background-color: white;
+    color: var(--offBlack);
   }
 }
 

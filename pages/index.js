@@ -5,7 +5,6 @@ import ChatBot from '@/components/ChatBot';
 import NavBar from '@/components/NavBar/NavBar'
 import HorizontalCarousel from '@/components/HorizontalCarousel'
 
-
 import DownloadButton from '@/components/Buttons/downLoadButton';
 import MessageButton from '@/components/Buttons/messageButton';
 import SeeMoreButton from '@/components/Buttons/seeMoreButton';

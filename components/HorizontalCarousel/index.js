@@ -19,4 +19,3 @@ const HorizontalCarousel = ({ imageUrl, title, username, description, className 
 };
 
 export default HorizontalCarousel;
-

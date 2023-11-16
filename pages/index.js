@@ -5,9 +5,9 @@ import ChatBot from '@/components/ChatBot';
 import NavBar from '@/components/NavBar/NavBar'
 import HorizontalCarousel from '@/components/HorizontalCarousel'
 import React, { StrictMode } from "react";
-import Main from "@/components/Animation/Home";
-import Refresh from "@/components/Animation/GeneratorRefresh";
-import Info from "@/components/Animation/RecipeInfo";
+// import Main from "@/components/Animation/Home";
+// import Refresh from "@/components/Animation/GeneratorRefresh";
+// import Info from "@/components/Animation/RecipeInfo";
 
 import DownloadButton from '@/components/Buttons/downLoadButton';
 import MessageButton from '@/components/Buttons/messageButton';

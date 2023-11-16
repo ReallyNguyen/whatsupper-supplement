@@ -23,9 +23,10 @@ export default function NavBar () {
                     <Link href="/product" className={`${styles.link1} ${router.pathname === "/product" ? styles.clicked : ""}`}>Product</Link>
                     <Link href="https://whatsupper-blog.vercel.app/" className={`${styles.link2}`}>Blog</Link>
                     <Link href="/contact" className={`${styles.link1} ${router.pathname === "/contact" ? styles.clicked : ""}`}>Contact Us</Link>  
-                    <DarkToggle />            
+                    <DarkToggle initialTheme={'light'} />           
                 </div>
             </div>
         </>
     )
 }
+

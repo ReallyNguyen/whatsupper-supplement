@@ -1,24 +1,12 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import styles from '@/styles/Home.module.css';
-import { ThemeProvider } from '@/context/ThemeContext';
-import DarkToggle from '@/components/DarkToggle';
 import ChatBot from '@/components/ChatBot';
 import NavBar from '@/components/NavBar/NavBar'
 
 import DownloadButton from '@/components/Buttons/downLoadButton';
 import MessageButton from '@/components/Buttons/messageButton';
 import SeeMoreButton from '@/components/Buttons/seeMoreButton';
-
-import Testimonials from '@/components/Testimonials';
-import testimonialsData from '@/data/testimonials';
-import testimonialsStyles from '@/components/Testimonials/Testimonials.module.css';
-import ContactForm from '@/components/Contact';
-import React, { StrictMode } from "react";
-// import Main from "@/components/Animation/Home";
-// import Refresh from "@/components/Animation/GeneratorRefresh";
-// import Info from "@/components/Animation/RecipeInfo";
-
 
 export default function Home() {
   return (
@@ -32,26 +20,20 @@ export default function Home() {
 
       <main className={`${styles.main}`}>
         <NavBar />
-        <ChatBot />
-        {/* <StrictMode>
-          <Main />
-          <Refresh />
-          <Info />
-        </StrictMode> */}
-        <div className={`${styles.gridContainer}`}>
-          {testimonialsData.map((testimonial, index) => (
-            <div key={index} className={`${styles.gridColumn}`}>
-              <Testimonials
-                imageUrl={testimonial.imageUrl}
-                title={testimonial.title}
-                username={testimonial.username}
-                description={testimonial.description}
-                className={testimonialsStyles[`card${index + 1}`]}
-              />
-            </div>
-          ))}
+        <div className={`${styles.titleImg}`}>
+          <div className={`${styles.cta}`}>
+            <p className={`${styles.header}`}>Empowering People, <br />One Meal at a Time 🍽️</p>
+            <DownloadButton />
+          </div>
+          <Image
+            src="/homemockup.png"
+            width={370}
+            height={760} />
         </div>
-        <ContactForm />
+        <div className={`${styles.carouselContainer}`}>
+          <p className={`${styles.carouselHeader}`}>See What Others Are Creating</p>
+        </div>
+        <ChatBot />
       </main>
     </>
   );

@@ -8,7 +8,7 @@ import { ThemeProvider } from '../components/Contexts/ThemeContext.js';
 
 import DownloadButton from '@/components/Buttons/downLoadButton';
 // import MessageButton from '@/components/Buttons/messageButton';
-// import SeeMoreButton from '@/components/Buttons/seeMoreButton';
+import SeeMoreButton from '@/components/Buttons/seeMoreButton';
 import testimonialsData from '@/data/testimonials';
 import horizontalStyles from '@/components/HorizontalCarousel/HorizontalCarousel.module.css';
 
@@ -56,6 +56,7 @@ export default function Home() {
           ))}
         </div>
         </div>
+        <SeeMoreButton />
        
         <ChatBot />
       </main>

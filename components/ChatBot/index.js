@@ -1,15 +1,17 @@
 import { useState, useEffect, useRef } from 'react';
 import Head from 'next/head';
 
-const initialMessage =
-  "Greetings and a warm welcome to WhatSupper Support! We are delighted that you've reached out to us for assistance. Please feel free to share any queries or concerns you may have, and we will do our utmost to provide you with the support and guidance you need. How may I be of service to you today?";
+const initialMessages = [
+  "Welcome to WhatSupper Support!",
+  "We're here to help you. Let us know how we can assist you today!",
+  "For all inquiries regarding our app and website, click on the prompts down below to direct you to the correct channels."
+];
 
 const questionsAndAnswers = [
   { question: 'Product Related Questions', answer: 'What would you like to ask?' },
   { question: 'Company Related Questions', answer: 'What would you like to know?' },
   { question: 'Resources', answer: 'What resources would you like?' },
   { question: 'Other', answer: 'For all other inquiries, please email us at WhatSupper@gmail.com.' },
-  // Add more questions and answers as needed
 ];
 
 export default function Chat() {
@@ -20,22 +22,34 @@ export default function Chat() {
 
   const showInitialMessage = () => {
     if (chat.length === 0) {
-      setChat([{ text: initialMessage, type: 'bot' }]);
+      setChat([
+        { text: initialMessages[0], type: 'bot' },
+        { text: initialMessages[1], type: 'bot' },
+        { text: initialMessages[2], type: 'bot' }
+      ]);
     }
   };
 
   const scrollToBottom = () => {
     if (chatContentRef.current) {
-      chatContentRef.current.scrollTop = chatContentRef.current.scrollHeight;
+      const chatContent = chatContentRef.current;
+      const lastBotMessage = chatContent.querySelector('.message.bot:last-child');
+  
+      if (lastBotMessage) {
+        lastBotMessage.scrollIntoView({ behavior: 'smooth' });
+      } else {
+        chatContent.scrollTop = chatContent.scrollHeight;
+      }
     }
   };
 
   useEffect(() => {
     showInitialMessage();
     scrollToBottom();
-  }, [chatVisible]);
+  }, [chat]);
 
   useEffect(() => {
+    showInitialMessage();
     scrollToBottom();
   }, [chat]);
 
@@ -53,7 +67,6 @@ export default function Chat() {
         break;
     }
 
-    // Scroll to the bottom after updating the chat
     scrollToBottom();
   };
 
@@ -62,19 +75,17 @@ export default function Chat() {
       case 'Product Related Questions':
         setAvailableQuestions([
           { question: 'Product Usage', answer: ' Our user-friendly app simplifies the cooking experience for you. To get started, easily download the application on your smartphone, grant camera access, and scan any food-related fliers at your disposal. WhatSupper utilizes advanced AI technology to effortlessly generate personalized recipes just for you! If you have any questions or need assistance, feel free to ask. We are here to help!' },
-          { question: 'Product Features', answer: 'WhatSupper offers real-time coupons from your favourite stores and affordable and customizable meal-planning that you can share with your friends and family. We also offer easy meal-planning and recipe generation with our handy AI tool!' },
+          { question: 'Product Features', answer: 'WhatSupper offers easy meal-planning and recipe generation with our cutting-edge AI tools. WhatSupper users are also able to view other recipes created from coupon fliers by users local to you!' },
           { question: 'How do I download WhatSupper?', answer: 'Whatsupper is available for free download, and users can access its core features without a subscription. You can download our app directly from GitHub and use it on the Expo App.' },
           { question: 'How does the AI work?', answer: 'Whatsupper has an AI feature that scans the food-related items from grocery store flyers to generate recipes, optimizing the usage of purchased items and minimizing waste.' },
-          // Add more questions for this category
         ]);
         break;
       case 'Company Related Questions':
         setAvailableQuestions([
           { question: 'Company History', answer: 'WhatSupper was created by a team of 7 students at BCIT in Burnaby, Canada.' },
-          { question: 'What sets Whatsupper apart?', answer: 'Whatsupper stands out with its coupon flyer integration, offering users savings on produce and digital deals not found in other apps.' },
+          { question: 'What sets Whatsupper apart?', answer: 'Whatsupper stands out by providing you discounted recipes and seamless meal-planning at your fingertips! Just point your smartphone camera at a flyer and let us work our AI recipe magic! With the use of OpenAI, we can generate recipes based on the area scanned.  Elevate your cooking, save time, and delight your taste buds with WhatSupper — We Scan. You Save and Savour.' },
           { question: 'Business Inquiries', answer: 'All business inquiries can be directed to WhatSupper@gmail.com.' },
           { question: 'Company Values', answer: 'Whatsupper caters to budget-conscious grocery shoppers and meal planners, a group that values cost-effective ways to manage food expenses while maintaining meal quality. The app allows users to create nutritious, budget-friendly meals by integrating discounted ingredients from grocery store coupon flyers. It also provides easy access to digital coupons from various stores, enabling informed shopping decisions for maximum savings.  Additionally, Whatsupper simplifies coupon management, eliminating the need for searching and organization, making grocery shopping both cost-effective and convenient for users in this market. Our app serves the market of budget-conscious consumers who are looking for ways to save money while preparing meals.' },
-          // Add more questions for this category
         ]);
         break;
       case 'Resources':
@@ -83,10 +94,8 @@ export default function Chat() {
           { question: 'App Documentation', answer: 'To learn more about how this app was created, please check out our blog!' },
           { question: 'GitHub Help', answer: 'For any GitHub-related issues, please contact WhatSupper@gmail.com.' },
           { question: 'App Help', answer: 'For any App-related issues, please contact WhatSupper@gmail.com.' },
-          // Add more questions for this category
         ]);
         break;
-      // Add cases for other main questions if needed
       default:
         setAvailableQuestions(questionsAndAnswers);
         break;
@@ -98,9 +107,9 @@ export default function Chat() {
   };
 
   const handleChatBoxIconClick = () => {
-    setChat([]); // Clear the chat
-    setChatVisible(!chatVisible); // Toggle visibility
-    scrollToBottom(); // Scroll to the bottom when opening the chat
+    setChat([]);
+    scrollToBottom(); 
+    setChatVisible(!chatVisible); 
   };
 
   return (
@@ -127,7 +136,6 @@ export default function Chat() {
             </div>
           </div>
 
-          {/* Wrap the chat content in a container */}
           <div className="content-container">
             <div className="chat-content" ref={chatContentRef}>
               {chat.map((message, index) => (
@@ -143,7 +151,6 @@ export default function Chat() {
             </div>
           </div>
 
-          {/* Wrap user responses in a separate container */}
           <div className="user-response">
             {availableQuestions.map((qa, index) => (
               <div
@@ -184,10 +191,10 @@ export default function Chat() {
 
         .chat-container {
           width: 350px;
-          height: 300px; /* Set a fixed height for the chat container */
+          height: 300px; 
           border-radius: 10px;
           background-color: #F1EFEF;
-          position: fixed; /* Set the position to fixed */
+          position: fixed; 
           font-family: 'Manrope', sans-serif;
           z-index: 4;
           bottom: 85px;
@@ -196,7 +203,7 @@ export default function Chat() {
         .banner {
           background-color: #629560;
           color: #F1EFEF;
-          padding: 10px;
+          padding: 1rem;
           text-align: center;
           font-family: 'Manrope', sans-serif;
           display: flex;
@@ -207,30 +214,31 @@ export default function Chat() {
 
         .banner-text {
           flex-grow: 1;
-          font-size: 15px;
+          font-size: 1rem;
           text-align: left;
-          padding-top: 3px;
+          padding-bottom: 1px;
+
         }
 
         .close-button {
           cursor: pointer;
-          padding-bottom: 2px;
         }
 
         .close-button img {
-          width: 8px;
+          width: 12px;
         }
 
 
         .content-container {
-          max-height: calc(100% - 50px);
+          max-height: calc(100% - 70px);
           overflow-y: scroll;
           position: relative;
+          width: 100%; 
         }
 
         .chat-content {
           padding: 15px;
-          overflow-y: scroll; /* Ensure this property is set */
+          overflow-y: scroll; 
         }
 
         .message {
@@ -272,6 +280,7 @@ export default function Chat() {
           background-color: #F1EFEF;
           border-bottom-left-radius: 10px;
           border-bottom-right-radius: 10px;
+          margin: 0; 
         }
         
 
@@ -296,8 +305,8 @@ export default function Chat() {
 
         .chat-box-icon {
           position: fixed;
-          bottom: 20px; // Adjust the distance from the bottom as needed
-          right: 20px; // Adjust the distance from the right as needed
+          bottom: 20px; 
+          right: 20px; 
           width: 50px;
           height: 50px;
         }

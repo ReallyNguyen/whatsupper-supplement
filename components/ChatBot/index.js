@@ -75,7 +75,7 @@ export default function Chat() {
       case 'Product Related Questions':
         setAvailableQuestions([
           { question: 'Product Usage', answer: ' Our user-friendly app simplifies the cooking experience for you. To get started, easily download the application on your smartphone, grant camera access, and scan any food-related fliers at your disposal. WhatSupper utilizes advanced AI technology to effortlessly generate personalized recipes just for you! If you have any questions or need assistance, feel free to ask. We are here to help!' },
-          { question: 'Product Features', answer: 'WhatSupper offers real-time coupons from your favourite stores and affordable and customizable meal-planning that you can share with your friends and family. We also offer easy meal-planning and recipe generation with our handy AI tool!' },
+          { question: 'Product Features', answer: 'WhatSupper offers easy meal-planning and recipe generation with our cutting-edge AI tools. WhatSupper users are also able to view other recipes created from coupon fliers by users local to you!' },
           { question: 'How do I download WhatSupper?', answer: 'Whatsupper is available for free download, and users can access its core features without a subscription. You can download our app directly from GitHub and use it on the Expo App.' },
           { question: 'How does the AI work?', answer: 'Whatsupper has an AI feature that scans the food-related items from grocery store flyers to generate recipes, optimizing the usage of purchased items and minimizing waste.' },
         ]);
@@ -83,7 +83,7 @@ export default function Chat() {
       case 'Company Related Questions':
         setAvailableQuestions([
           { question: 'Company History', answer: 'WhatSupper was created by a team of 7 students at BCIT in Burnaby, Canada.' },
-          { question: 'What sets Whatsupper apart?', answer: 'Whatsupper stands out with its coupon flyer integration, offering users savings on produce and digital deals not found in other apps.' },
+          { question: 'What sets Whatsupper apart?', answer: 'Whatsupper stands out by providing you discounted recipes and seamless meal-planning at your fingertips! Just point your smartphone camera at a flyer and let us work our AI recipe magic! With the use of OpenAI, we can generate recipes based on the area scanned.  Elevate your cooking, save time, and delight your taste buds with WhatSupper — We Scan. You Save and Savour.' },
           { question: 'Business Inquiries', answer: 'All business inquiries can be directed to WhatSupper@gmail.com.' },
           { question: 'Company Values', answer: 'Whatsupper caters to budget-conscious grocery shoppers and meal planners, a group that values cost-effective ways to manage food expenses while maintaining meal quality. The app allows users to create nutritious, budget-friendly meals by integrating discounted ingredients from grocery store coupon flyers. It also provides easy access to digital coupons from various stores, enabling informed shopping decisions for maximum savings.  Additionally, Whatsupper simplifies coupon management, eliminating the need for searching and organization, making grocery shopping both cost-effective and convenient for users in this market. Our app serves the market of budget-conscious consumers who are looking for ways to save money while preparing meals.' },
         ]);

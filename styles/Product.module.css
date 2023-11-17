@@ -74,3 +74,11 @@
   font-weight: 'semibold';
   line-height: normal;
 }
+
+.animations {
+  display: flex;
+  flex-direction: row;
+  column-gap: 5rem;
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+}

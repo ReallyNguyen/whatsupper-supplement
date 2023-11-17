@@ -2,7 +2,11 @@ import { useLottie } from "lottie-react";
 import refreshAnimation from "@/assets/JSON/Generator-Refresh.json";
 
 const style = {
-    height: 400,
+    height: 450,
+    width: 220,
+    borderRadius: 20,
+    overflow: 'hidden',
+    marginTop: 60,
 };
 
 const Refresh = () => {
@@ -12,9 +16,13 @@ const Refresh = () => {
         autoplay: true,
     };
 
-    const { View } = useLottie(options, style);
+    const { View } = useLottie(options);
 
-    return View;
+    return (
+        <div style={style}>
+            {View}
+        </div>
+    );
 };
 
 export default Refresh;

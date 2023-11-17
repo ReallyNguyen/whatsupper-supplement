@@ -4,12 +4,7 @@ import styles from '@/styles/Home.module.css';
 import ChatBot from '@/components/ChatBot';
 import NavBar from '@/components/NavBar/NavBar'
 import HorizontalCarousel from '@/components/HorizontalCarousel'
-// import React, { StrictMode } from "react";
 import { ThemeProvider } from '../components/Contexts/ThemeContext.js';
-
-// import Main from "@/components/Animation/Home";
-// import Refresh from "@/components/Animation/GeneratorRefresh";
-// import Info from "@/components/Animation/RecipeInfo";
 
 import DownloadButton from '@/components/Buttons/downLoadButton';
 // import MessageButton from '@/components/Buttons/messageButton';
@@ -31,11 +26,6 @@ export default function Home() {
 
       <main className={`${styles.main}`}>
         <NavBar />
-        {/* <StrictMode>
-          <Main />
-          <Refresh />
-          <Info />
-        </StrictMode> */}
         <div className={`${styles.titleImg}`}>
           <div className={`${styles.cta}`}>
             <p className={`${styles.header}`}>Empowering People, <br />One Meal at a Time 🍽️</p>

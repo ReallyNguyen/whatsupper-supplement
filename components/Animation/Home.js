@@ -2,7 +2,10 @@ import { useLottie } from "lottie-react";
 import homeAnimation from "@/assets/JSON/Home.json";
 
 const style = {
-    height: 400,
+    height: 450,
+    width: 220,
+    borderRadius: 20,
+    overflow: 'hidden',
 };
 
 const Main = () => {
@@ -12,9 +15,13 @@ const Main = () => {
         autoplay: true,
     };
 
-    const { View } = useLottie(options, style);
+    const { View } = useLottie(options);
 
-    return View;
+    return (
+        <div style={style}>
+            {View}
+        </div>
+    );
 };
 
 export default Main;

@@ -1,0 +1,141 @@
+.overlay {
+    background: rgba(20, 20, 20, 0.8);
+    height: 230vh;
+    position: absolute;
+    z-index: 15;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+}
+
+.container {
+    position: relative;
+    background-color: var(--offWhite);
+    font-family: var(--font-family);
+    margin: 0 7.8rem;
+    z-index: 100;
+    height: 230vh;
+}
+
+.overlayText {
+    position: absolute;
+    top: 20%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    color: var(--offWhite);
+    text-align: left;
+    z-index: 4;
+}
+
+.overlayText h1 {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.overlayText p {
+    font-size: 25px;
+    width: 85%;
+}
+
+.tabContainer {
+    display: flex;
+    flex-direction: row;
+    margin-top: -2rem;
+    z-index: 7;
+    position: relative;
+}
+
+.tabsContainer {
+    margin: 0 3rem;
+}
+
+.tab {
+    width: 50%;
+    background-color: var(--asparagus);
+    text-align: center;
+    border-radius: 25px 25px 0px 0px;
+    border: none;
+}
+
+.tab h1 {
+    color: var(--offWhite);
+}
+
+.activeTab {
+    background-color: var(--offWhite);
+}
+
+.activeTab h1 {
+    color: var(--asparagus);
+}
+
+.instructions {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.column1 {
+    width: 40%;
+}
+
+.ingredientsColumn1 {
+    width: 40%;
+}
+
+.alpha li {
+    list-style-type: lower-alpha;
+}
+
+.first li {
+    width: 60%;
+}
+
+.final li {
+    width: 80%;
+}
+
+.imageTextContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image {
+    margin: 3rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Center vertically */
+}
+
+/* Set a max-width for the image */
+.imageContainer {
+    max-width: 100%;
+    /* Adjust as needed */
+    height: auto;
+    /* Maintain aspect ratio */
+}
+
+.scanContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.scannedContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.scanned {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10rem;
+}

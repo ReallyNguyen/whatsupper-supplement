@@ -12,17 +12,9 @@ import Refresh from "@/components/Animation/GeneratorRefresh";
 import Info from "@/components/Animation/RecipeInfo";
 import Lottie from "lottie-react";
 
+
 export default function Product() {
 
-    const [isPopUpVisible, setPopUpVisibility] = useState(false);
-    const handleClosePopUp = () => {
-        // Close the PopUp component
-        setPopUpVisibility(false);
-    };
-    const handleTestimonialClick = () => {
-        // Toggle the visibility of the PopUp component
-        setPopUpVisibility(!isPopUpVisible);
-    };
     return (
         <ThemeProvider>
             <div className={`${styles.main}`}>
@@ -43,25 +35,7 @@ export default function Product() {
                     <p className={`${styles.subTestHeader}`}>See what others are creating
                         with our AI scanning feature 🧑‍🍳✨</p>
                 </div>
-                <div className={`${styles.gridContainer} ${styles.scrollableGrid}`}>
-                    {testimonialsData.map((testimonial, index) => (
-                        <div key={index} className={`${styles.gridColumn}`} onClick={handleTestimonialClick}>
-                            <Testimonials
-                                imageUrl={testimonial.imageUrl}
-                                title={testimonial.title}
-                                username={testimonial.username}
-                                description={testimonial.description}
-                                className={testimonialsStyles[`card${index + 1}`]}
-                            />
-                        </div>
-                    ))}
-                </div>
-                {isPopUpVisible && (
-                    <PopUp>
-                        {/* Add a close button or any other content inside PopUp */}
-                        <button onClick={handleClosePopUp}>Close PopUp</button>
-                    </PopUp>
-                )}
+                <PopUp />
             </div>
         </ThemeProvider>
 

@@ -122,15 +122,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* Center vertically */
 }
 
 
 .imageContainer {
     max-width: 100%;
-
     height: auto;
-    z-index: 4;
 }
 
 .scanContainer {

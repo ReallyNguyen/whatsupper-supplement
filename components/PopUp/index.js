@@ -26,10 +26,18 @@ export default function PopUp() {
 
     const customStyles = {
         overlay: {
-            backgroundColor: 'rgba(0, 0, 0, 0.6)'
+            backgroundColor: 'rgba(0, 0, 0, 0.6)',
         },
         content: {
-            display: 'flex'
+            display: 'flex',
+            background: "none",
+            border: "none",
+            padding: 0,
+            marginTop: '-3%',
+            marginBo: '-3%',
+            marginRight: 80,
+            marginLeft: 80,
+            zIndex: 4
         }
     }
 
@@ -50,8 +58,8 @@ export default function PopUp() {
                     ))}
                 </div>
             </div>
-            <Modal isOpen={isOpen} onRequestClose={() => setIsOpen(false)} style={customStyles}>
-                <div className={styles.container}>
+            <Modal isOpen={isOpen} onRequestClose={() => setIsOpen(false)} style={customStyles} >
+                <div className={`${styles.container} ${styles.modalContent}`}>
                     <div className={styles.imageContainer}>
                         <div className={styles.imageTextContainer}>
                             <Image src={Ramen} alt="ramen" objectFit="cover" className={styles.imageWidth} />
@@ -61,7 +69,6 @@ export default function PopUp() {
                             </div>
                         </div>
                     </div>
-
                     <div className={styles.tabContainer}>
                         <button
                             className={`${styles.tab} ${activeTab === 'Recipe' && styles.activeTab}`}

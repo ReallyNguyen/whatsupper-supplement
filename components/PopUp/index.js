@@ -34,9 +34,6 @@ export default function PopUp() {
             border: "none",
             padding: 0,
             marginTop: '-3%',
-            marginBo: '-3%',
-            marginRight: 80,
-            marginLeft: 80,
             zIndex: 4
         }
     }

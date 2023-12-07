@@ -173,4 +173,16 @@
         width: 100%;
     }
 
+    .overlayText h1 {
+        font-size: 12px;
+    }
+
+    .overlayText p {
+        font-size: 10px;
+    }
+
+    .imageWidth {
+        height: 10rem;
+    }
+
 }

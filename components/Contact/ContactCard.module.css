@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400&display=swap');
 
 .contactCard {
-
   width: 800px;
   border: 1px solid #f1efef;
   border-radius: 8px;
@@ -204,4 +203,33 @@
 .nameEmail {
   flex-direction: row;
   display: flex;
+}
+
+@media (max-width: 768px) {
+  .form-row {
+    flex-direction: row;
+  }
+
+  .submit {
+    width: 10rem
+  }
+
+  .contactCard {
+    width: 300px;
+  }
+
+  .nameEmail {
+    flex-direction: column;
+    display: flex;
+  }
+
+  .emailCombined {
+    margin-left: 0rem;
+  }
+
+  .emailInput,
+  .nameInput {
+    width: 15.2rem;
+  }
+
 }

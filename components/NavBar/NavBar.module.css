@@ -1,3 +1,5 @@
+/* NavBar.module.css */
+
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap');
 
 .navbarItems {
@@ -6,10 +8,10 @@
     column-gap: 40rem;
     align-items: center;
     padding-bottom: 2rem;
+    justify-content: center;
 }
 
 .navbarLinks {
-    padding-top: 1rem;
     display: flex;
     align-items: center;
     flex-direction: row;
@@ -26,4 +28,61 @@
 
 .clicked {
     font-weight: 700;
+}
+
+.nav {
+    display: none;
+}
+
+.dropdown {
+    position: absolute;
+    top: 0;
+    width: 131px;
+    height: 263px;
+    background-color: white;
+}
+
+.logoMobile {
+    margin-top: 10px;
+}
+
+@media (max-width: 767px) {
+
+    .nav {
+        display: block;
+    }
+
+    .navbarItems {
+        column-gap: 3rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .whatsupperLogo img {
+        width: 110px;
+        height: 30px;
+
+    }
+
+    .link1 {
+        display: none;
+    }
+
+    .link2 {
+        display: none;
+    }
+
+    .navbarItemsColumns {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        margin-left: 10px;
+        font-family: var(--font-family);
+    }
+
+    .x {
+        font-family: var(--font-family);
+    }
 }

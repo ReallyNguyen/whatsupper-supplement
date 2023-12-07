@@ -4,7 +4,6 @@
   justify-content: space-between;
   align-items: center;
   padding: var(--padding);
-  min-height: 100vh;
 }
 
 .landingContent {
@@ -31,4 +30,15 @@
   font-style: normal;
   font-weight: 'semibold';
   line-height: normal;
+}
+
+@media (max-width: 767px) {
+  .header {
+    color: var(--off-black);
+    font-family: 'Manrope';
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
 }

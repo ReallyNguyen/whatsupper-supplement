@@ -29,7 +29,7 @@ export default function Home() {
         <div className={`${styles.titleImg}`}>
           <div className={`${styles.cta}`}>
             <p className={`${styles.header}`}>Empowering People, <span className={`${styles.green}`}><br/>One Meal</span> at a Time 🍽️</p>
-            <DownloadButton />
+            {/* <DownloadButton /> */}
           </div>
           <Image
             src="/homemockup.png"
@@ -57,7 +57,7 @@ export default function Home() {
           ))}
         </div>
         </div>
-        <SeeMoreButton />
+        {/* <SeeMoreButton /> */}
        
         <ChatBot />
       </main>

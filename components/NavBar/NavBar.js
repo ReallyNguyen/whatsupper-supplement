@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import whatsupper from "@/public/whatsupper.png";
+import whatsupper from "@/public/whatsupper.svg";
 import nav from "@/public/nav.svg"
 import styles from '@/components/NavBar/NavBar.module.css';
 import DarkToggle from "../DarkToggle";
@@ -29,8 +29,8 @@ export default function NavBar() {
       display: 'flex',
       width: '131px',
       height: '263px',
-      top: '-5px',
-      left: '-5px',
+      top: '2rem',
+      left: '2rem',
       borderRadius: '15px'
     }
   }

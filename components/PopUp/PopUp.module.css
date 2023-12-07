@@ -76,6 +76,7 @@
 
 .tab h1 {
     color: var(--offWhite);
+    font-size: 2rem;
 }
 
 .activeTab {
@@ -173,6 +174,12 @@
         width: 100%;
     }
 
+    .overlayText {
+        top: 3.5%;
+        left: 57%;
+        width: 95%;
+    }
+
     .overlayText h1 {
         font-size: 12px;
     }
@@ -185,4 +192,36 @@
         height: 10rem;
     }
 
+    .tab h1 {
+        font-size: 0.8rem;
+    }
+
+    .recipeContainer h1 {
+        font-size: 1rem;
+    }
+
+    .column1 {
+        width: 100%;
+    }
+
+    .column1 h3 {
+        font-size: 0.9rem;
+    }
+
+    .column1 ul {
+        font-size: 0.8rem;
+    }
+
+    .instructions {
+        flex-direction: column;
+    }
+
+    .alpha {
+        font-size: 0.8rem;
+        width: 100%;
+    }
+
+    .container {
+        height: 290vh;
+    }
 }

@@ -28,7 +28,7 @@ export default function Home() {
         <NavBar />
         <div className={`${styles.titleImg}`}>
           <div className={`${styles.cta}`}>
-            <p className={`${styles.header}`}>Empowering People, <br />One Meal at a Time 🍽️</p>
+            <p className={`${styles.header}`}>Empowering People, <span className={`${styles.green}`}><br/>One Meal</span> at a Time 🍽️</p>
             <DownloadButton />
           </div>
           <Image
@@ -37,6 +37,7 @@ export default function Home() {
             height={660} 
             priority={true} // {false} | {true}
             alt="picture of phone"
+            className={`${styles.mockup}`}
           />
         </div>
         <div className={`${styles.carouselContainer}`}>

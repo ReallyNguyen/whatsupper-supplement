@@ -27,6 +27,7 @@
     display: flex;
     justify-content: center;
     margin: 0;
+    width: 100%;
 }
 
 .overlayText {
@@ -160,4 +161,16 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     overflow: hidden;
+}
+
+@media (min-width: 100px) and (max-width: 600px) {
+    .gridContainer {
+        display: flex;
+        gap: 9rem;
+        justify-content: flex-start;
+        align-items: center;
+        overflow-x: auto;
+        width: 100%;
+    }
+
 }

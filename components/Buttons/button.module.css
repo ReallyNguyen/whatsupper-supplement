@@ -76,3 +76,13 @@
 .seeMoreClicked {
   background-color: #96AF65;
 }
+
+@media (min-width: 100px) and (max-width: 430px) {
+
+  .download,
+  .seeMore {
+    width: 8rem;
+    height: 2.2rem;
+    font-size: 0.7rem;
+  }
+}

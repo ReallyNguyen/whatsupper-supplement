@@ -59,3 +59,31 @@
    gap: 20px;
    overflow-x: auto;
  }
+
+ .green {
+   color: var(--asparagus)
+ }
+
+ @media (min-width: 100px) and (max-width: 900px) {
+
+   .header,
+   .carouselHeader {
+     font-size: 1rem;
+     margin-top: 3rem;
+   }
+
+   .titleImg {
+     gap: 2rem;
+     text-align: center;
+   }
+
+   .cta {
+     justify-content: center;
+     align-items: center;
+   }
+
+   .mockup {
+     width: 45%;
+     height: 45%;
+   }
+ }

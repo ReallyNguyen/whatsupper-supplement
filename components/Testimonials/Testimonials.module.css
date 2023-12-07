@@ -74,3 +74,20 @@
  .content p {
    margin-bottom: 15px;
  }
+
+ @media (min-width: 100px) and (max-width: 600px) {
+
+   .card1,
+   .card2,
+   .card3,
+   .card4,
+   .card5,
+   .card6,
+   .card7,
+   .card8,
+   .card9 {
+     width: 200%;
+     height: 22.4375rem;
+     margin-top: 0;
+   }
+ }

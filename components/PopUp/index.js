@@ -164,9 +164,8 @@ export default function PopUp() {
                                     alt="flyer"
                                     width={900}
                                     objectFit="cover"
-
+                                    className={styles.img}
                                 />
-
                             </div>
                             <div className={styles.scanContainer}>
                                 <div className={styles.scannedContainer}>
